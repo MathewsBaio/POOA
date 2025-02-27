@@ -3,7 +3,7 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
-<html>
+<html lang="pt-BR">
     <head>
         <title>Reultado</title>
         <meta charset="UTF-8">
@@ -14,8 +14,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <% String nome = request.getParameter("fname");
                 double imc = Double.parseDouble(request.getParameter("fimc"));
             %>
-            Ol√° <% out.print(nome); %>, <br/>
-          Seu IMC √© <% out.print(imc); %>
+            Ol· <% out.print(nome); %>, <br/>
+          Seu IMC È <% out.print(imc); %>
         </h1>
     </body>
 </html>

@@ -17,7 +17,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author Mathews
  */
-@WebServlet(name = "NewServlet", urlPatterns = {"/primeiro"}, value={"/primeiro"})
+@WebServlet(name = "NewServlet", value={"/primeiro"})
 public class NewServlet extends HttpServlet {
 
     

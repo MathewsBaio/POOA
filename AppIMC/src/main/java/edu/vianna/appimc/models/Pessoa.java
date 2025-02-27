@@ -21,7 +21,7 @@ public class Pessoa {
     }
 
     public double IMC() {
-        return peso * (altura * altura);
+        return peso / (altura * altura);
     }
 
     public String getNome() {
