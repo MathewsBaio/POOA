@@ -1,3 +1,4 @@
+<%@ page import="edu.vianna.appimc.models.Pessoa" %>
 <!DOCTYPE html>
 <!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -11,11 +12,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </head>
     <body>
         <h1>
-            <% String nome = request.getParameter("fname");
-                double imc = Double.parseDouble(request.getParameter("fimc"));
+            <% Pessoa p = (Pessoa) request.getAttribute("pessoa");
+
             %>
-            Olá <% out.print(nome); %>, <br/>
-          Seu IMC é <% out.print(imc); %>
+            Ola <% out.print(p.getNome()); %>, <br/>
+          Seu IMC e <% out.print(p.IMC()); %>
         </h1>
     </body>
 </html>
